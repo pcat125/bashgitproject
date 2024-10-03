@@ -4,11 +4,17 @@ name: actionpractice
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "main" ]
+    branches: [ "master" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "master" ]
+  fork:
+    branches: [ "master" ]
+
+ 
+
+  schedule:
+  - cron: "0 8 * * 1"
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
