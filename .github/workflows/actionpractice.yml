@@ -4,11 +4,10 @@ name: actionpractice
 
 # Controls when the workflow will run
 on:
+on:
   push:
     branches: [ "master" ]
   pull_request:
-    branches: [ "master" ]
-  fork:
     branches: [ "master" ]
 
  
